@@ -1,4 +1,5 @@
 import Layout from "../components/layout"
+import { verifySession } from "./authVerify";
 
 export default function IndexPage() {
   return (
@@ -11,3 +12,5 @@ export default function IndexPage() {
     </Layout>
   )
 }
+
+export const getServerSideProps = verifySession
