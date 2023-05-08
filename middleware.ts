@@ -13,4 +13,4 @@ export default withAuth({
 })
 
 const matcher = routes.map((route) => route.route)
-export const config = { matcher }
+export const config = { matcher: ['/me'] }
